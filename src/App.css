@@ -1,0 +1,108 @@
+.section__container {
+  margin-bottom: 45px;
+  padding-bottom: 45px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table__title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.table__container {
+  width: 450px;
+  margin: 0 auto;
+  border: 1px solid #dddddd;
+}
+@media screen and (max-width: 575px) {
+  .table__container {
+    width: 100%;
+  }
+}
+
+.table__header {
+  font-weight: 600;
+  background-color: #f8f8f8;
+}
+.table__header .table__cell {
+  font-size: 15px;
+  text-align: center;
+}
+
+.table__content {
+  max-height: 475px;
+  overflow-y: auto;
+}
+
+.table__row {
+  display: flex;
+}
+.table__row:last-of-type .table__cell {
+  border-bottom: none;
+}
+
+.table__cell {
+  flex: 1;
+  font-size: 14px;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}
+.table__cell:last-of-type {
+  border-right: none
+}
+
+.chart__container {
+  height: 500px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .chart__container {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .chart__container {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .chart__container {
+    height: 300px;
+  }
+}
+
+.chart__title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.spinner__container {
+  padding-top: 100px;
+}
+
+.spinner__icon {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #3a3a3a;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner__text {
+  color: #3a3a3a;
+}
